@@ -9,6 +9,8 @@ const router = (app) => {
 
     route.get('/status', (request, response) => AppController.getStatus(request, response));
     route.get('/stats', (request, response) => AppController.getStats(request, response));
+
+    route.post('/users', (request, response) => UsersController.postNew(request, response));
 };
 
 export default router;
